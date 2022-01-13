@@ -1,16 +1,23 @@
 # KWK-python-review
 python review for data science from KWK
+
 import pandas as pd
 import numpy as np
+
+
 url = 'https://raw.githubusercontent.com/datacult/kwk-datascience/master/Linear%20regression/test_scores.csv'
 data = pd.read_csv(url)
+
 # Be sure to remove duplicates in any data
+
 data.drop_duplicates(inplace = True)
 
 # Count the values in the dataset
+
 data.info()
 # Print high level summaries of what is in the dataset
 data.describe()
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 
