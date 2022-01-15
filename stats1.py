@@ -44,3 +44,17 @@ np.sqrt(np.var(order["item_price"],ddof=1))
 # find the quartiles 
 np.quantile(order["item_price"], [0,0.25,0.5,0.75,1])
 np.quantile(order["item_price"], [0,0.25,0.5,0.75,1])
+
+# find the interquartile range
+np.quantile(order["item_price"],.75) - np.quantile(order["item_price"],.25)
+
+from scipy.stats import iqr
+
+iqr(order['item_price'])
+
+order.describe()
+
+url =  'https://raw.githubusercontent.com/mikaela-el/repo/master/kwk_spotify.csv' 
+spotify =  pd.read_csv(url)
+# preview data 
+spotify.head()
