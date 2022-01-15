@@ -5,3 +5,6 @@ import statistics
 import numpy as np 
 import scipy.stats 
 import pandas as pd
+
+mean = sum(x) / len(x)
+print(mean)
