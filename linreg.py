@@ -37,6 +37,7 @@ plt.ylim(0,110)
 # Y dataset
 Y = data[["test_score"]]
 
+
 # X dataset
 X = data[["minutes_studied"]]
 test_score_LR_model = LinearRegression()
@@ -101,3 +102,7 @@ plt.ylabel("rain")
 # Set axis range
 plt.xlim(0,30)
 plt.ylim(0,200)
+
+
+
+
